@@ -108296,13 +108296,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }], [2, "cnt-flexy-view-adam-promo-mobile-menu", {
           "menuItems": [16]
         }], [2, "cnt-flexy-view-adam-promo-portfolio-menu", {
-          "payload": [8],
-          "lastClickedCategory": [32]
+          "payload": [8]
         }], [2, "cnt-flexy-view-adam-promo-resume-1_01", {
           "payload": [16]
-        }], [2, "cnt-flexy-view-adam-promo-education-block", {
+        }], [0, "cnt-flexy-view-adam-promo-education-block", {
           "payload": [8]
-        }], [2, "cnt-flexy-view-adam-promo-employment-block", {
+        }], [0, "cnt-flexy-view-adam-promo-employment-block", {
           "payload": [8]
         }], [2, "cnt-flexy-view-adam-promo-portfolio-stack", {
           "stackList": [8, "stack-list"]

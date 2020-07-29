@@ -2,7 +2,6 @@
 
 <ul>	
 	<li><a href="https://almalib.github.io/ng-promo/">Portfolio</a></li>Мой личный сайт-портфолио. Стек: Angular, Stencil, JS, сетка Bootstrap. Адаптация под все экраны.
-	<li><a href="https://almalib.github.io/ng-chat/">Chat</a></li>Десктоп чат на Angular с использованием веб-компонетов Stencil.
 	<li><a href="https://almalib.github.io/angular-app/">Blog</a></li>Блог на Angular с использованием веб-компонентов Stencil. Адаптация под все экраны.
 	<li><a href="https://almalib.github.io/unicorp/">Unicorp</a></li>Верстка с переносом в Angular. Без адаптации под мобильные устройства.
 	<li><a href="https://almalib.github.io/store/">Store</a></li>Магазин на React.

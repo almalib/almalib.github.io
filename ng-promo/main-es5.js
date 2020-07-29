@@ -447,9 +447,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           stackList: ["html5", "css3", "java script", "angular", "stencil js", "git"]
         }, {
           img: "https://cdn1.radikalno.ru/uploads/2020/7/28/7933e96aa4eb531084f1d092fab1c37a-full.png",
-          title: "Мобильной и десктоп чат",
+          title: "Десктоп чат",
           description: "Веб-приложение с возможностью отправки сообщений, фильтрами категорий, диалогов и личных сообщений",
-          link: "https://almalib.github.io/angular-app/",
+          link: "https://almalib.github.io/ng-chat/",
           category: "web-app",
           stackList: ["html5", "css3", "java script", "angular", "stencil js", "git"]
         }, {

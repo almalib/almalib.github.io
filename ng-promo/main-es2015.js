@@ -281,7 +281,7 @@ class PromoService {
             ],
             portfolioCardsItems: [
                 {
-                    img: "https://cdn1.radikalno.ru/uploads/2020/7/28/48031f44c9b68278c08800048519cdd7-full.png",
+                    img: "https://s8.hostingkartinok.com/uploads/images/2020/08/682bbdddead9bc17e915a7a7e7fb35ed.png",
                     title: "Новостной блог",
                     description: "Моя первая работа с использованием Stencil JS.",
                     link: "https://almalib.github.io/angular-app/",
@@ -296,9 +296,9 @@ class PromoService {
                     ],
                 },
                 {
-                    img: "https://cdn1.radikalno.ru/uploads/2020/7/28/7933e96aa4eb531084f1d092fab1c37a-full.png",
+                    img: "https://s8.hostingkartinok.com/uploads/images/2020/08/9bf7ddf29b3cb1ad538a9a582f21484d.png",
                     title: "Десктоп чат",
-                    description: "Веб-приложение с возможностью отправки сообщений, фильтрами категорий, диалогов и личных сообщений",
+                    description: "Веб-приложение с возможностью отправки сообщений, фильтрами категорий, диалогов и личных сообщений. Первый опыт работы в команде",
                     link: "https://almalib.github.io/ng-chat/",
                     category: "web-app",
                     stackList: [
@@ -311,7 +311,7 @@ class PromoService {
                     ],
                 },
                 {
-                    img: "https://cdn1.radikalno.ru/uploads/2020/7/28/5676898bfa0663143ecac00d9b81af76-full.png",
+                    img: "https://s8.hostingkartinok.com/uploads/images/2020/08/2bbbee435bcb57260720608652c67910.png ",
                     title: "Сайт на CMS WordPress",
                     description: "Медицинский справочник с фильтрацией категорий по алфавиту",
                     link: "http://medikmira.ru/",
@@ -319,7 +319,7 @@ class PromoService {
                     stackList: ["html5", "css3", "java script", "wordpress"],
                 },
                 {
-                    img: "https://i.ibb.co/5FDhML4/landing.png",
+                    img: "https://s8.hostingkartinok.com/uploads/images/2020/08/b71330e448d501ecf8d99570a7562dc6.png",
                     title: "Лендинг на CMS Tilda Publishing",
                     description: "Сайт-визитка для IT-пространства Кодология",
                     link: "http://codologia95.tilda.ws/",
@@ -329,7 +329,7 @@ class PromoService {
             ],
         };
         this.footerBlock = {
-            img: "https://previews.aspirity.com/spirit/assets/img/img_bg_main.jpg",
+            img: "https://s8.hostingkartinok.com/uploads/images/2020/08/fa750b69b2a621efa71f8dfc36f3db46.jpg",
             phone: "8 (963) 705-19-92",
             mail: "almalib@bk.ru",
             skype: "almalib",

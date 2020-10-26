@@ -464,7 +464,7 @@
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! C:\Users\Адам\Desktop\portfolio\ng-promo\src\styles.css */
+    /*! C:\Users\Адам\Desktop\Portfolio\ng-promo\src\styles.css */
     "./src/styles.css");
     /***/
   }

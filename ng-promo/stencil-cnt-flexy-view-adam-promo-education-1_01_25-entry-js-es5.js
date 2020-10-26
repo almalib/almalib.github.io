@@ -257,7 +257,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             "class": "col-md-8 resume-list"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("h3", {
             "class": "resume-list-title"
-          }, "\u043E\u0431\u0440\u0437\u0430\u043E\u0432\u0430\u043D\u0438\u0435"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])(EmploymentBlock, {
+          }, "\u043E\u043F\u044B\u0442 \u0440\u0430\u0431\u043E\u0442\u044B"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])(EmploymentBlock, {
             array: this.payload.employmentBlock
           })));
         }
@@ -843,6 +843,11 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             });
           }))));
         }
+        /**
+         * Фильтрация по категориям
+         * @param id
+         */
+
       }, {
         key: "portfolioCardsFilter",
         value: function portfolioCardsFilter(id) {
@@ -906,7 +911,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     };
 
     CntFlexyViewAdamPromoPortfolioCards.style = cntFlexyViewAdamPromoPortfolioCardsCss;
-    var cntFlexyViewAdamPromoPortfolioMenuCss = "li.sc-cnt-flexy-view-adam-promo-portfolio-menu{display:inline-block}.portfolio-menu-link-active.sc-cnt-flexy-view-adam-promo-portfolio-menu{color:#6d56c1;text-decoration:none}span.sc-cnt-flexy-view-adam-promo-portfolio-menu{padding-right:50px;-webkit-transition:all .3s;transition:all .3s;position:relative;cursor:pointer;color:#999999}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:after{content:\"\";position:absolute;width:7px;height:2px;bottom:0;right:42px;opacity:0;-webkit-transition:background .3s;transition:background .3s;background:#6d56c1}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:hover{-webkit-transition:all .15s;transition:all .15s;color:#6d56c1}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:hover:after{opacity:1}span.active.sc-cnt-flexy-view-adam-promo-portfolio-menu{color:#6d56c1}@media screen and (max-width: 576px){span.sc-cnt-flexy-view-adam-promo-portfolio-menu{padding-right:15px}}";
+    var cntFlexyViewAdamPromoPortfolioMenuCss = "li.sc-cnt-flexy-view-adam-promo-portfolio-menu{display:inline-block}.portfolio-menu-link-active.sc-cnt-flexy-view-adam-promo-portfolio-menu{color:#6d56c1;text-decoration:none}span.sc-cnt-flexy-view-adam-promo-portfolio-menu{padding-right:50px;-webkit-transition:all .3s;transition:all .3s;position:relative;cursor:pointer;color:#999999}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:after{content:\"\";position:absolute;width:7px;height:2px;bottom:0;right:42px;opacity:0;-webkit-transition:background .3s;transition:background .3s;background:#6d56c1}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:hover{-webkit-transition:all .15s;transition:all .15s;color:#6d56c1}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:hover:after{opacity:1}span.active.sc-cnt-flexy-view-adam-promo-portfolio-menu{color:#6d56c1}@media screen and (max-width: 576px){span.sc-cnt-flexy-view-adam-promo-portfolio-menu{padding-right:15px}span.sc-cnt-flexy-view-adam-promo-portfolio-menu:after{display:none}}";
 
     var CntFlexyViewAdamPromoPortfolioMenu = /*#__PURE__*/function () {
       function CntFlexyViewAdamPromoPortfolioMenu(hostRef) {

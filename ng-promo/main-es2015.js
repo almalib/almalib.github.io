@@ -506,7 +506,7 @@ Object(stencil_portfolio_loader__WEBPACK_IMPORTED_MODULE_2__["defineCustomElemen
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Адам\Desktop\portfolio\ng-promo\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Адам\Desktop\Portfolio\ng-promo\src\main.ts */"./src/main.ts");
 
 
 /***/ })

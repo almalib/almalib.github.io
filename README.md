@@ -1,4 +1,4 @@
-<h1>My Angular and React apps</h1>
+<h1>My projects</h1>
 
 <ul>	
 	<li><a href="https://almalib.github.io/ng-funbox/">Funbox</a></li>Тестовое задание для Funbox. Использованный стек: Angular, Stencil, JS.

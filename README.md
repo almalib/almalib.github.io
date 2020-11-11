@@ -4,6 +4,6 @@
 	<li><a href="https://almalib.github.io/ng-funbox/">Funbox</a></li>Тестовое задание от компании Funbox. Использованный стек: Angular, Stencil, JS.
 	<li><a href="https://almalib.github.io/ng-promo/">Portfolio</a></li>Мой сайт-портфолио. Адаптация под все устройства. Использованный стек: Angular, Stencil, JS.
 	<li><a href="https://almalib.github.io/ng-chat/">Chat</a></li>Десктоп чат. Использованный стек: Angular, Stencil, JS.
-	<li><a href="https://almalib.github.io/todo-list/">Todos</a></li>Список дел на Angular.
+	<li><a href="https://almalib.github.io/todo-list/">Todo List</a></li>Список дел на Angular.
 </ul>
     

@@ -401,9 +401,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SidebarComponent,
       selectors: [["app-sidebar"]],
-      decls: 5,
+      decls: 8,
       vars: 1,
-      consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"]],
+      consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"], ["href", "https://github.com/almalib/todo-list", "target", "_blank", 1, "text-dark"]],
       template: function SidebarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
@@ -423,6 +423,16 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, SidebarComponent_li_4_Template, 3, 1, "li", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 1);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " github ");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         }
@@ -522,13 +532,18 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass(StoreTodosService, [{
+        key: "addItem",
+        value: function addItem(newItem) {
+          if (newItem !== '') {}
+        }
+      }, {
         key: "getOnlyImportant",
         value: function getOnlyImportant() {
           return this.onlyImportant;
         }
       }, {
-        key: "toogleOnlyImportant",
-        value: function toogleOnlyImportant() {
+        key: "toggleOnlyImportant",
+        value: function toggleOnlyImportant() {
           this.onlyImportant = !this.onlyImportant;
         }
       }, {
@@ -582,8 +597,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           return categories;
         }
       }, {
-        key: "toogleComplete",
-        value: function toogleComplete(id) {
+        key: "toggleComplete",
+        value: function toggleComplete(id) {
           this.items = this.items.map(function (item) {
             if (item.id === id) {
               return Object.assign(Object.assign({}, item), {
@@ -595,8 +610,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           });
         }
       }, {
-        key: "toogleImportant",
-        value: function toogleImportant(id) {
+        key: "toggleImportant",
+        value: function toggleImportant(id) {
           this.items = this.items.map(function (item) {
             if (item.id === id) {
               return Object.assign(Object.assign({}, item), {
@@ -720,7 +735,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r5.toogleCompleted(item_r2.id);
+          return ctx_r5.toggleCompleted(item_r2.id);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -748,7 +763,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           var ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
 
-          return ctx_r7.toogleImportant(item_r2.id);
+          return ctx_r7.toggleImportant(item_r2.id);
         });
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, TodosComponent_li_23_span_8_Template, 2, 0, "span", 21);
@@ -795,14 +810,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       _createClass(TodosComponent, [{
-        key: "toogleCompleted",
-        value: function toogleCompleted(id) {
-          this.storeTodos.toogleComplete(id);
+        key: "ngOnInit",
+        value: function ngOnInit() {}
+      }, {
+        key: "toggleCompleted",
+        value: function toggleCompleted(id) {
+          this.storeTodos.toggleComplete(id);
         }
       }, {
-        key: "toogleImportant",
-        value: function toogleImportant(id) {
-          this.storeTodos.toogleImportant(id);
+        key: "toggleImportant",
+        value: function toggleImportant(id) {
+          this.storeTodos.toggleImportant(id);
         }
       }, {
         key: "getItems",
@@ -815,18 +833,15 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.storeTodos.removeTodoItems();
         }
       }, {
-        key: "toogleOnlyImportant",
-        value: function toogleOnlyImportant() {
-          this.storeTodos.toogleOnlyImportant();
+        key: "toggleOnlyImportant",
+        value: function toggleOnlyImportant() {
+          this.storeTodos.toggleOnlyImportant();
         }
       }, {
         key: "isOnlyImportant",
         value: function isOnlyImportant() {
           return this.storeTodos.onlyImportant;
         }
-      }, {
-        key: "ngOnInit",
-        value: function ngOnInit() {}
       }]);
 
       return TodosComponent;
@@ -901,7 +916,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 9);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_Template_a_click_17_listener() {
-            return ctx.toogleOnlyImportant();
+            return ctx.toggleOnlyImportant();
           });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
@@ -1064,7 +1079,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! D:\MyApps\Angular\todos\src\main.ts */
+    /*! D:\MyApps\Angular\todo-list\src\main.ts */
     "./src/main.ts");
     /***/
   }

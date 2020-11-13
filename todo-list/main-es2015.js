@@ -202,7 +202,7 @@ class SidebarComponent {
     }
 }
 SidebarComponent.ɵfac = function SidebarComponent_Factory(t) { return new (t || SidebarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_store_todos_service__WEBPACK_IMPORTED_MODULE_1__["StoreTodosService"])); };
-SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-sidebar"]], decls: 5, vars: 1, consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
+SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SidebarComponent, selectors: [["app-sidebar"]], decls: 8, vars: 1, consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"], ["href", "https://github.com/almalib/todo-list", "target", "_blank", 1, "text-dark"]], template: function SidebarComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "li", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 2);
@@ -211,6 +211,11 @@ SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, SidebarComponent_li_4_Template, 3, 1, "li", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " github ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
@@ -253,10 +258,14 @@ class StoreTodosService {
         this.selectedCategory = null;
         this.onlyImportant = false;
     }
+    addItem(newItem) {
+        if (newItem !== '') {
+        }
+    }
     getOnlyImportant() {
         return this.onlyImportant;
     }
-    toogleOnlyImportant() {
+    toggleOnlyImportant() {
         this.onlyImportant = !this.onlyImportant;
     }
     selectCategory(category) {
@@ -292,7 +301,7 @@ class StoreTodosService {
         });
         return categories;
     }
-    toogleComplete(id) {
+    toggleComplete(id) {
         this.items = this.items.map(item => {
             if (item.id === id) {
                 return Object.assign(Object.assign({}, item), { completed: !item.completed });
@@ -300,7 +309,7 @@ class StoreTodosService {
             return item;
         });
     }
-    toogleImportant(id) {
+    toggleImportant(id) {
         this.items = this.items.map(item => {
             if (item.id === id) {
                 return Object.assign(Object.assign({}, item), { important: !item.important });
@@ -358,7 +367,7 @@ function TodosComponent_li_23_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "li", 15);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 16);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 17);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_li_23_Template_input_click_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const item_r2 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.toogleCompleted(item_r2.id); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_li_23_Template_input_click_2_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const item_r2 = ctx.$implicit; const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r5.toggleCompleted(item_r2.id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 18);
@@ -368,7 +377,7 @@ function TodosComponent_li_23_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 20);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_li_23_Template_div_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const item_r2 = ctx.$implicit; const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.toogleImportant(item_r2.id); });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_li_23_Template_div_click_7_listener() { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r6); const item_r2 = ctx.$implicit; const ctx_r7 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"](); return ctx_r7.toggleImportant(item_r2.id); });
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](8, TodosComponent_li_23_span_8_Template, 2, 0, "span", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](9, TodosComponent_li_23_span_9_Template, 2, 0, "span", 21);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -391,11 +400,13 @@ class TodosComponent {
     constructor(storeTodos) {
         this.storeTodos = storeTodos;
     }
-    toogleCompleted(id) {
-        this.storeTodos.toogleComplete(id);
+    ngOnInit() {
     }
-    toogleImportant(id) {
-        this.storeTodos.toogleImportant(id);
+    toggleCompleted(id) {
+        this.storeTodos.toggleComplete(id);
+    }
+    toggleImportant(id) {
+        this.storeTodos.toggleImportant(id);
     }
     getItems() {
         return this.storeTodos.getItems();
@@ -403,13 +414,11 @@ class TodosComponent {
     removeTodoItems() {
         this.storeTodos.removeTodoItems();
     }
-    toogleOnlyImportant() {
-        this.storeTodos.toogleOnlyImportant();
+    toggleOnlyImportant() {
+        this.storeTodos.toggleOnlyImportant();
     }
     isOnlyImportant() {
         return this.storeTodos.onlyImportant;
-    }
-    ngOnInit() {
     }
 }
 TodosComponent.ɵfac = function TodosComponent_Factory(t) { return new (t || TodosComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_store_todos_service__WEBPACK_IMPORTED_MODULE_1__["StoreTodosService"])); };
@@ -442,7 +451,7 @@ TodosComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "div", 8);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_Template_a_click_17_listener() { return ctx.toogleOnlyImportant(); });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function TodosComponent_Template_a_click_17_listener() { return ctx.toggleOnlyImportant(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 10);
@@ -535,7 +544,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\MyApps\Angular\todos\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\MyApps\Angular\todo-list\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -351,7 +351,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       this.introBlock = {
         img: "https://sun9-72.userapi.com/w9Wxx0G6QFsHlmXkUqLcipouhKmKzAgbsqFTRQ/ieIep7fDS_c.jpg",
         name: "Адам Абдулаев_",
-        speciality: "front-end разработчик",
+        speciality: "frontend-разработчик",
         age: "28",
         phone: "8 (963) 705-19-92",
         mail: "almalib@bk.ru",
@@ -397,16 +397,20 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           speciality: "Заместитель руководителя информационно-аналитического центра",
           date: "2018 - 2019"
         }, {
-          job: "Фриланс",
-          speciality: "HTML-верстальщик",
-          date: "2018 - 2020"
-        }, {
           job: "IT-протсранство Кодология",
-          speciality: "Преподаватель, контент-менеджер",
+          speciality: "Преподаватель курсов по HTML/CSS и WordPress",
           date: "2018 - н.в."
         }, {
           job: "Федерация профсоюзов Чеченской Республики",
           speciality: "Пресс-секретарь Председателя Федерации профсоюзов Чеченской Республики",
+          date: "2019 - 2020"
+        }, {
+          job: "ООО ИТЛАМ",
+          speciality: "HTML-верстальщик",
+          date: "2019 - 2020"
+        }, {
+          job: "LLC Ramman Incorporated",
+          speciality: "Junior Frontend-разработчик",
           date: "2019 - 2020"
         }],
         educationBlock: [{
@@ -439,13 +443,6 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           item: "Лендинги"
         }],
         portfolioCardsItems: [{
-          img: "https://s8.hostingkartinok.com/uploads/images/2020/08/682bbdddead9bc17e915a7a7e7fb35ed.png",
-          title: "Новостной блог",
-          description: "Моя первая работа с использованием Stencil JS.",
-          link: "https://almalib.github.io/angular-app/",
-          category: "web-app",
-          stackList: ["html5", "css3", "java script", "angular", "stencil js", "git"]
-        }, {
           img: "https://s8.hostingkartinok.com/uploads/images/2020/08/9bf7ddf29b3cb1ad538a9a582f21484d.png",
           title: "Десктоп чат",
           description: "Веб-приложение с возможностью отправки сообщений, фильтрами категорий, диалогов и личных сообщений. Первый опыт работы в команде",

@@ -316,7 +316,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "background",
             style: {
-              backgroundImage: 'url(' + this.categories.img + ')'
+              backgroundImage: "url(" + this.categories.img + ")"
             }
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             id: "contact",
@@ -339,19 +339,19 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dl", {
             "class": "contact-list"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "Phone:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: 'tel:' + this.categories.phone + ''
+            href: "tel:" + this.categories.phone + ""
           }, this.categories.phone)), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "Skype:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: 'skype:' + this.categories.skype + ''
+            href: "skype:" + this.categories.skype + ""
           }, this.categories.skype)), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "Email:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: 'mailto:' + this.categories.mail + ''
+            href: "mailto:" + this.categories.mail + ""
           }, this.categories.mail)))), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "contacts-social"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("ul", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: "https://www.facebook.com/fromzandak/"
-          }, "Facebook")), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: "https://www.instagram.com/free_side/"
+            href: "https://www.instagram.com/free_side/",
+            target: "_blank"
           }, "Instagram")), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("li", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: "https://github.com/almalib"
+            href: "https://github.com/almalib",
+            target: "_blank"
           }, "GitHub"))))), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "col-md-7 col-lg-5"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
@@ -711,23 +711,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dl", {
             "class": "contact-list"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "\u0412\u043E\u0437\u0440\u0430\u0441\u0442:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, this.payload.age), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "\u0422\u0435\u043B\u0435\u0444\u043E\u043D:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: 'tel:' + this.payload.phone + ''
+            href: "tel:" + this.payload.phone + ""
           }, this.payload.phone)), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "\u041F\u043E\u0447\u0442\u0430:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: 'mailto:' + this.payload.mail + ''
+            href: "mailto:" + this.payload.mail + ""
           }, this.payload.mail)), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dt", null, "\u0410\u0434\u0440\u0435\u0441:"), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dd", null, this.payload.address))), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("p", {
             "class": "personal-profiles-social"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: ""
+            href: "https://github.com/almalib/ng-promo",
+            target: "_blank"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", {
             "class": "fab fa-github"
           })), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: ""
+            href: "https://www.instagram.com/free_side/",
+            target: "_blank"
           }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", {
             "class": "fab fa-instagram-square"
-          })), Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("a", {
-            href: ""
-          }, Object(_index_bc6c3acf_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", {
-            "class": "fab fa-facebook-square"
           })))))));
         }
       }]);

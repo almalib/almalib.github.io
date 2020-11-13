@@ -84203,10 +84203,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm/index-53235049.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/index-53235049.js ***!
-  \**************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/index-063f1606.js":
+/*!********************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/index-063f1606.js ***!
+  \********************************************************/
 /*! exports provided: H, a, b, c, f, g, h, p, r */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -84349,6 +84349,11 @@ const getScopeId = (tagName, mode) => 'sc-' + ( tagName);
  * Don't add values to these!!
  */
 const EMPTY_OBJ = {};
+/**
+ * Namespaces
+ */
+const SVG_NS = 'http://www.w3.org/2000/svg';
+const HTML_NS = 'http://www.w3.org/1999/xhtml';
 const isDef = (v) => v != null;
 const isComplexType = (o) => {
     // https://jsperf.com/typeof-fn-object/5
@@ -84613,8 +84618,15 @@ const createElm = (oldParentVNode, newParentVNode, childIndex, parentElm) => {
         elm = newVNode.$elm$ = doc.createTextNode(newVNode.$text$);
     }
     else {
+        if ( !isSvgMode) {
+            isSvgMode = newVNode.$tag$ === 'svg';
+        }
         // create element
-        elm = newVNode.$elm$ = ( doc.createElement( newVNode.$tag$));
+        elm = newVNode.$elm$ = ( doc.createElementNS(isSvgMode ? SVG_NS : HTML_NS,  newVNode.$tag$)
+            );
+        if ( isSvgMode && newVNode.$tag$ === 'foreignObject') {
+            isSvgMode = false;
+        }
         // add css classes, attrs, props, listeners, etc.
         {
             updateElement(null, newVNode, isSvgMode);
@@ -84633,6 +84645,16 @@ const createElm = (oldParentVNode, newParentVNode, childIndex, parentElm) => {
                     // append our new node
                     elm.appendChild(childNode);
                 }
+            }
+        }
+        {
+            if (newVNode.$tag$ === 'svg') {
+                // Only reset the SVG context when we're exiting <svg> element
+                isSvgMode = false;
+            }
+            else if (elm.tagName === 'foreignObject') {
+                // Reenter SVG context when we're exiting <foreignObject> element
+                isSvgMode = true;
             }
         }
     }
@@ -84739,8 +84761,14 @@ const patch = (oldVNode, newVNode) => {
     const elm = (newVNode.$elm$ = oldVNode.$elm$);
     const oldChildren = oldVNode.$children$;
     const newChildren = newVNode.$children$;
+    const tag = newVNode.$tag$;
     const text = newVNode.$text$;
     if ( text === null) {
+        {
+            // test if we're rendering an svg element, or still rendering nodes inside of one
+            // only add this to the when the compiler sees we're using an svg somewhere
+            isSvgMode = tag === 'svg' ? true : tag === 'foreignObject' ? false : isSvgMode;
+        }
         // element node
         {
             {
@@ -84766,6 +84794,9 @@ const patch = (oldVNode, newVNode) => {
         else if ( oldChildren !== null) {
             // no new child vnodes, but there are old child vnodes to remove
             removeVnodes(oldChildren, 0, oldChildren.length - 1);
+        }
+        if ( isSvgMode && tag === 'svg') {
+            isSvgMode = false;
         }
     }
     else if ( oldVNode.$text$ !== text) {
@@ -85344,7 +85375,7 @@ const loadModule = (cmpMeta, hostRef, hmrVersionId) => {
     if (module) {
         return module[exportName];
     }
-    return __webpack_require__("./node_modules/stencil-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$")(`./${bundleId}.entry.js`).then(importedModule => {
+    return __webpack_require__("./node_modules/s-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$")(`./${bundleId}.entry.js`).then(importedModule => {
         {
             cmpModules.set(bundleId, importedModule);
         }
@@ -85398,7 +85429,7 @@ const patchEsm = () => {
     // @ts-ignore
     if ( !(CSS && CSS.supports && CSS.supports('color', 'var(--c)'))) {
         // @ts-ignore
-        return __webpack_require__.e(/*! import() | stencil-polyfills-css-shim */ "stencil-polyfills-css-shim").then(__webpack_require__.t.bind(null, /*! ./css-shim-d61c58a9.js */ "./node_modules/stencil-chat/dist/esm/css-shim-d61c58a9.js", 7)).then(() => {
+        return __webpack_require__.e(/*! import() | stencil-polyfills-css-shim */ "stencil-polyfills-css-shim").then(__webpack_require__.t.bind(null, /*! ./css-shim-d61c58a9.js */ "./node_modules/s-chat/dist/esm/css-shim-d61c58a9.js", 7)).then(() => {
             if ((plt.$cssShim$ = win.__cssshim)) {
                 return plt.$cssShim$.i();
             }
@@ -85441,7 +85472,7 @@ const patchBrowser = () => {
         if ( !win.customElements) {
             // module support, but no custom elements support (Old Edge)
             // @ts-ignore
-            return __webpack_require__.e(/*! import() | stencil-polyfills-dom */ "stencil-polyfills-dom").then(__webpack_require__.t.bind(null, /*! ./dom-e7fe74ef.js */ "./node_modules/stencil-chat/dist/esm/dom-e7fe74ef.js", 7)).then(() => opts);
+            return __webpack_require__.e(/*! import() | stencil-polyfills-dom */ "stencil-polyfills-dom").then(__webpack_require__.t.bind(null, /*! ./dom-e7fe74ef.js */ "./node_modules/s-chat/dist/esm/dom-e7fe74ef.js", 7)).then(() => opts);
         }
     }
     return promiseResolve(opts);
@@ -85487,10 +85518,10 @@ const patchDynamicImport = (base, orgScriptElm) => {
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm/index.mjs":
-/*!******************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/index.mjs ***!
-  \******************************************************/
+/***/ "./node_modules/s-chat/dist/esm/index.mjs":
+/*!************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/index.mjs ***!
+  \************************************************/
 /*! exports provided: ChatLinkTypeEnum, ChatMessageDirectionEnum, ChatMessageTypeEnum, ChatUserActionStatusState, ChatUserPresenceState, ChatViewToShowEnum, chatConvertWritingStatusToMessage, createMessage, createTextMessage, filterContactBySearchValue, filterDialogsByCategory, filterDialogsBySearchValue, filterMessageBySearchValue, scrollToBot */
 /***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
@@ -85744,21 +85775,21 @@ function scrollToBot(scrollContainer, options) {
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm/loader.mjs":
-/*!*******************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/loader.mjs ***!
-  \*******************************************************/
+/***/ "./node_modules/s-chat/dist/esm/loader.mjs":
+/*!*************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/loader.mjs ***!
+  \*************************************************/
 /*! exports provided: defineCustomElements */
 /***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defineCustomElements", function() { return defineCustomElements; });
-/* harmony import */ var _index_53235049_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-53235049.js */ "./node_modules/stencil-chat/dist/esm/index-53235049.js");
+/* harmony import */ var _index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index-063f1606.js */ "./node_modules/s-chat/dist/esm/index-063f1606.js");
 
 
-const defineCustomElements = (win, options) => Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["a"])().then(() => {
-  return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["b"])([["contact-card_24",[[0,"my-component"],[2,"mobile-chat",{"showContent":[32],"dialogs":[32],"contacts":[32],"message":[32]}],[2,"mobile-personal",{"message":[16]}],[2,"mobile-dialogs",{"dialogs":[16],"categories":[16]}],[2,"m-chat-dialogs",{"dialogs":[16]}],[2,"m-chat-header",{"categories":[16],"isShowModal":[32]}],[2,"contacts-list",{"contacts":[16],"theme":[1],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"contactsFiltered":[32],"lastSearchValue":[32]}],[2,"contacts-list-body",{"contacts":[16],"theme":[1]}],[2,"s-adam-profile",{"theme":[1],"categories":[16]}],[2,"user-folders",{"dialogs":[16],"theme":[1],"showInputCreateFolderState":[32]}],[2,"personal-message",{"message":[16],"theme":[1],"writing":[16]}],[2,"personal-header",{"message":[16],"openedDialog":[16],"dialogs":[16],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"isShowDropDown":[32],"isPersonalMess":[32]}],[2,"m-chat-footer",{"theme":[1]}],[2,"personal-footer",{"theme":[1],"canRecordAudio":[4,"can-record-audio"],"switchFooter":[32]}],[2,"contact-card",{"contact":[16],"theme":[1]}],[2,"contacts-list-header",{"theme":[1]}],[2,"message-from",{"message":[16]}],[2,"footer-audio",{"theme":[1],"outInputTag":[32]}],[2,"footer-text",{"theme":[1],"canRecordAudio":[4,"can-record-audio"],"showAudioSendButton":[32]}],[2,"dialog-categories",{"theme":[1],"categories":[16],"lastClickedCategory":[32]}],[2,"message-img",{"message":[8],"checkSendMess":[8,"check-send-mess"]}],[2,"message-text",{"message":[16],"createSendTime":[8,"create-send-time"],"checkSendMess":[8,"check-send-mess"]}],[2,"user-status",{"theme":[1],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"]}],[2,"dialog-card",{"mess":[16],"theme":[1]}]]],["module-chat",[[2,"module-chat",{"messages":[32],"dialogs":[32],"dictionary":[32]}]]],["s-adam-chat",[[2,"s-adam-chat",{"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"dialogVisible":[32],"profileVisible":[32],"contactsVisible":[32]}]]],["user-profile",[[2,"user-profile"]]],["s-adam-copying",[[2,"s-adam-copying"]]],["s-adam-search-contact",[[0,"s-adam-search-contact"]]],["btn-wrapper_10",[[2,"module-personal",{"message":[16],"dialogs":[16],"canRecordAudio":[4,"can-record-audio"],"writing":[16],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"openedDialog":[16]}],[2,"s-saqhan-chat-users-wrapper",{"dialogs":[16],"categories":[16],"personalMessage":[16]}],[2,"s-saqhan-chat-files-wrapper"],[2,"btn-wrapper",{"showChat":[4,"show-chat"],"dialogs":[2]}],[2,"module-header",{"disableShowFullChatState":[4,"disable-show-full-chat-state"]}],[2,"s-saqhan-chat-users",{"dialogs":[16]}],[2,"s-saqhan-chat-form-search",{"categories":[16]}],[2,"s-saqhan-chat-add-question"],[2,"s-saqhan-chat-files"],[2,"s-saqhan-chat-form-search-files"]]],["cnt-module-chat",[[2,"cnt-module-chat",{"categories":[16],"writing":[16],"dialogs":[16],"disableInnerSearchDialogsState":[4,"disable-inner-search-dialogs-state"],"disableInnerSearchMessagesState":[4,"disable-inner-search-messages-state"],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"disableShowFullChatState":[4,"disable-show-full-chat-state"],"visibleState":[4,"visible-state"],"openState":[4,"open-state"],"message":[16],"contacts":[16],"dictionary":[8],"chatViewState":[1,"chat-view-state"],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"canRecordAudio":[4,"can-record-audio"],"contactsState":[32],"openedDialog":[32],"categoriesState":[32],"dialogsState":[32],"messageState":[32],"setWritingState":[64],"updateChatPresenceState":[64],"updateChatActionState":[64],"hide":[64],"activeRecordAudioState":[64],"activeShowFullChat":[64],"changeViewToShow":[64],"safeScrollToBotMessageView":[64],"show":[64],"close":[64],"open":[64],"openDialog":[64]}]]],["s-adam-personal-header",[[2,"s-adam-personal-header",{"message":[16],"openedDialog":[16],"chatPresenceState":[2,"chat-presence-state"],"chatActionState":[1,"chat-action-state"],"searchVisible":[32]}]]],["s-adam-nav-item",[[2,"s-adam-nav-item"]]],["s-saqhan-chat-user",[[2,"s-saqhan-chat-user",{"dialogs":[16]}]]],["s-adam-contacts_5",[[2,"s-adam-direct",{"message":[16],"chatPresenceState":[2,"chat-presence-state"],"chatActionState":[1,"chat-action-state"]}],[2,"s-adam-dialogs",{"dialogs":[16],"theme":[1],"categories":[16]}],[2,"s-adam-contacts",{"contacts":[16],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"theme":[1],"contactsFiltered":[32],"lastSearchValue":[32]}],[2,"s-adam-navigate",{"logo":[16]}],[2,"s-adam-no-chat"]]]], options);
+const defineCustomElements = (win, options) => Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["a"])().then(() => {
+  return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["b"])([["contact-card_21",[[0,"my-component"],[2,"s-adam-chat",{"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"dialogVisible":[32],"profileVisible":[32],"contactsVisible":[32]}],[2,"s-adam-direct",{"message":[16],"chatPresenceState":[2,"chat-presence-state"],"chatActionState":[1,"chat-action-state"]}],[2,"s-adam-dialogs",{"dialogs":[16],"theme":[1],"categories":[16]}],[2,"s-adam-contacts",{"contacts":[16],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"theme":[1],"contactsFiltered":[32],"lastSearchValue":[32]}],[2,"s-adam-navigate",{"logo":[16]}],[2,"s-adam-no-chat"],[2,"s-adam-personal-header",{"message":[16],"openedDialog":[16],"chatPresenceState":[2,"chat-presence-state"],"chatActionState":[1,"chat-action-state"],"searchVisible":[32]}],[2,"s-adam-nav-item"],[2,"user-folders",{"dialogs":[16],"theme":[1],"showInputCreateFolderState":[32]}],[2,"personal-footer",{"theme":[1],"canRecordAudio":[4,"can-record-audio"],"switchFooter":[32]}],[2,"contact-card",{"contact":[16],"theme":[1]}],[2,"contacts-list-header",{"theme":[1]}],[2,"message-from",{"message":[16]}],[2,"footer-audio",{"theme":[1],"outInputTag":[32]}],[2,"footer-text",{"theme":[1],"canRecordAudio":[4,"can-record-audio"],"showAudioSendButton":[32]}],[2,"dialog-categories",{"theme":[1],"categories":[16],"lastClickedCategory":[32]}],[2,"message-img",{"message":[8],"checkSendMess":[8,"check-send-mess"]}],[2,"message-text",{"message":[16],"createSendTime":[8,"create-send-time"],"checkSendMess":[8,"check-send-mess"]}],[2,"user-status",{"theme":[1],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"]}],[2,"dialog-card",{"mess":[16],"theme":[1]}]]],["module-chat",[[2,"module-chat",{"messages":[32],"dialogs":[32],"dictionary":[32]}]]],["mobile-chat",[[2,"mobile-chat",{"showContent":[32],"dialogs":[32],"contacts":[32],"message":[32]}]]],["user-profile",[[2,"user-profile"]]],["s-adam-copying",[[2,"s-adam-copying"]]],["s-adam-search-contact",[[0,"s-adam-search-contact"]]],["personal-header_2",[[2,"personal-message",{"message":[16],"theme":[1],"writing":[16]}],[2,"personal-header",{"message":[16],"openedDialog":[16],"dialogs":[16],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"isShowDropDown":[32],"isPersonalMess":[32]}]]],["btn-wrapper_11",[[2,"module-personal",{"message":[16],"dialogs":[16],"canRecordAudio":[4,"can-record-audio"],"writing":[16],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"openedDialog":[16]}],[2,"s-saqhan-chat-users-wrapper",{"dialogs":[16],"categories":[16],"personalMessage":[16]}],[2,"s-saqhan-chat-files-wrapper"],[2,"btn-wrapper",{"showChat":[4,"show-chat"],"dialogs":[2]}],[2,"module-header",{"disableShowFullChatState":[4,"disable-show-full-chat-state"]}],[2,"contacts-list",{"contacts":[16],"theme":[1],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"contactsFiltered":[32],"lastSearchValue":[32]}],[2,"s-saqhan-chat-users",{"dialogs":[16]}],[2,"s-saqhan-chat-form-search",{"categories":[16]}],[2,"s-saqhan-chat-add-question"],[2,"s-saqhan-chat-files"],[2,"s-saqhan-chat-form-search-files"]]],["cnt-module-chat",[[2,"cnt-module-chat",{"categories":[16],"writing":[16],"dialogs":[16],"disableInnerSearchDialogsState":[4,"disable-inner-search-dialogs-state"],"disableInnerSearchMessagesState":[4,"disable-inner-search-messages-state"],"disableInnerSearchContactState":[4,"disable-inner-search-contact-state"],"disableShowFullChatState":[4,"disable-show-full-chat-state"],"visibleState":[4,"visible-state"],"openState":[4,"open-state"],"message":[16],"contacts":[16],"dictionary":[8],"chatViewState":[1,"chat-view-state"],"chatActionState":[1,"chat-action-state"],"chatPresenceState":[2,"chat-presence-state"],"canRecordAudio":[4,"can-record-audio"],"contactsState":[32],"openedDialog":[32],"categoriesState":[32],"dialogsState":[32],"messageState":[32],"setWritingState":[64],"updateChatPresenceState":[64],"updateChatActionState":[64],"hide":[64],"activeRecordAudioState":[64],"activeShowFullChat":[64],"changeViewToShow":[64],"safeScrollToBotMessageView":[64],"show":[64],"close":[64],"open":[64],"openDialog":[64]}]]],["m-chat-dialogs_2",[[2,"m-chat-dialogs",{"dialogs":[16]}],[2,"m-chat-header",{"categories":[16],"isShowModal":[32]}]]],["contacts-list-body_3",[[2,"contacts-list-body",{"contacts":[16],"theme":[1]}],[2,"s-adam-profile",{"theme":[1],"categories":[16]}],[2,"m-chat-footer",{"theme":[1]}]]],["mobile-dialogs_2",[[2,"mobile-personal",{"message":[16]}],[2,"mobile-dialogs",{"dialogs":[16],"categories":[16]}]]],["s-saqhan-chat-user",[[2,"s-saqhan-chat-user",{"dialogs":[16]}]]]], options);
 });
 
 
@@ -85766,10 +85797,10 @@ const defineCustomElements = (win, options) => Object(_index_53235049_js__WEBPAC
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm/polyfills/index.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/polyfills/index.js ***!
-  \***************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/polyfills/index.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/polyfills/index.js ***!
+  \*********************************************************/
 /*! exports provided: applyPolyfills */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -85782,7 +85813,7 @@ function applyPolyfills() {
     var win = window;
 
     if (!win.customElements || (win.Element && (!win.Element.prototype.closest || !win.Element.prototype.matches || !win.Element.prototype.remove))) {
-      promises.push(__webpack_require__.e(/*! import() | stencil-polyfills-dom */ "stencil-polyfills-dom").then(__webpack_require__.t.bind(null, /*! ./dom.js */ "./node_modules/stencil-chat/dist/esm/polyfills/dom.js", 7)));
+      promises.push(__webpack_require__.e(/*! import() | stencil-polyfills-dom */ "stencil-polyfills-dom").then(__webpack_require__.t.bind(null, /*! ./dom.js */ "./node_modules/s-chat/dist/esm/polyfills/dom.js", 7)));
     }
 
     function checkIfURLIsSupported() {
@@ -85804,7 +85835,7 @@ function applyPolyfills() {
       !checkIfURLIsSupported() ||
       typeof WeakMap == 'undefined'
     ) {
-      promises.push(__webpack_require__.e(/*! import() | stencil-polyfills-core-js */ "stencil-polyfills-core-js").then(__webpack_require__.t.bind(null, /*! ./core-js.js */ "./node_modules/stencil-chat/dist/esm/polyfills/core-js.js", 7)));
+      promises.push(__webpack_require__.e(/*! import() | stencil-polyfills-core-js */ "stencil-polyfills-core-js").then(__webpack_require__.t.bind(null, /*! ./core-js.js */ "./node_modules/s-chat/dist/esm/polyfills/core-js.js", 7)));
     }
   }
   return Promise.all(promises);
@@ -85813,19 +85844,19 @@ function applyPolyfills() {
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/loader/index.es2017.mjs":
-/*!***********************************************************!*\
-  !*** ./node_modules/stencil-chat/loader/index.es2017.mjs ***!
-  \***********************************************************/
+/***/ "./node_modules/s-chat/loader/index.es2017.mjs":
+/*!*****************************************************!*\
+  !*** ./node_modules/s-chat/loader/index.es2017.mjs ***!
+  \*****************************************************/
 /*! exports provided: applyPolyfills, defineCustomElements */
 /***/ (function(__webpack_module__, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _dist_esm_polyfills_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dist/esm/polyfills/index.js */ "./node_modules/stencil-chat/dist/esm/polyfills/index.js");
+/* harmony import */ var _dist_esm_polyfills_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../dist/esm/polyfills/index.js */ "./node_modules/s-chat/dist/esm/polyfills/index.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "applyPolyfills", function() { return _dist_esm_polyfills_index_js__WEBPACK_IMPORTED_MODULE_0__["applyPolyfills"]; });
 
-/* harmony import */ var _dist_esm_loader_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dist/esm/loader.mjs */ "./node_modules/stencil-chat/dist/esm/loader.mjs");
+/* harmony import */ var _dist_esm_loader_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../dist/esm/loader.mjs */ "./node_modules/s-chat/dist/esm/loader.mjs");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "defineCustomElements", function() { return _dist_esm_loader_mjs__WEBPACK_IMPORTED_MODULE_1__["defineCustomElements"]; });
 
 

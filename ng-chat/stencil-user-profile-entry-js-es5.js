@@ -6,15 +6,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-user-profile-entry-js"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/user-profile.entry.js":
-  /*!******************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/user-profile.entry.js ***!
-    \******************************************************************/
+  "./node_modules/s-chat/dist/esm/user-profile.entry.js":
+  /*!************************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/user-profile.entry.js ***!
+    \************************************************************/
 
   /*! exports provided: user_profile */
 
   /***/
-  function node_modulesStencilChatDistEsmUserProfileEntryJs(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesSChatDistEsmUserProfileEntryJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -27,9 +27,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_53235049_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./index-53235049.js */
-    "./node_modules/stencil-chat/dist/esm/index-53235049.js");
+    var _index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./index-063f1606.js */
+    "./node_modules/s-chat/dist/esm/index-063f1606.js");
 
     var userProfileCss = "";
 
@@ -37,14 +37,14 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function UserProfile(hostRef) {
         _classCallCheck(this, UserProfile);
 
-        Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.clickToShowDialogs = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToShowDialogs", 7);
+        Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.clickToShowDialogs = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToShowDialogs", 7);
       }
 
       _createClass(UserProfile, [{
         key: "render",
         value: function render() {
-          return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-adam-profile", {
+          return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-adam-profile", {
             theme: 'mobile'
           });
         }

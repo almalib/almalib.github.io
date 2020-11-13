@@ -10,15 +10,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-cnt-module-chat-entry-js"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/cnt-module-chat.entry.js":
-  /*!*********************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/cnt-module-chat.entry.js ***!
-    \*********************************************************************/
+  "./node_modules/s-chat/dist/esm/cnt-module-chat.entry.js":
+  /*!***************************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/cnt-module-chat.entry.js ***!
+    \***************************************************************/
 
   /*! exports provided: cnt_module_chat */
 
   /***/
-  function node_modulesStencilChatDistEsmCntModuleChatEntryJs(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesSChatDistEsmCntModuleChatEntryJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -31,21 +31,21 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_53235049_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./index-53235049.js */
-    "./node_modules/stencil-chat/dist/esm/index-53235049.js");
+    var _index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./index-063f1606.js */
+    "./node_modules/s-chat/dist/esm/index-063f1606.js");
     /* harmony import */
 
 
-    var _index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
-    /*! ./index-bfa1c413.js */
-    "./node_modules/stencil-chat/dist/esm/index-bfa1c413.js");
+    var _utils_f6ec1f87_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+    /*! ./utils-f6ec1f87.js */
+    "./node_modules/s-chat/dist/esm/utils-f6ec1f87.js");
     /* harmony import */
 
 
-    var _utils_4870d924_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
-    /*! ./utils-4870d924.js */
-    "./node_modules/stencil-chat/dist/esm/utils-4870d924.js");
+    var _index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(
+    /*! ./index-582bc2f2.js */
+    "./node_modules/s-chat/dist/esm/index-582bc2f2.js");
 
     var cntModuleChatCss = ".wrapper-chat.sc-cnt-module-chat{-webkit-box-shadow:0 0 10px 1px #828282;box-shadow:0 0 10px 1px #828282;border-radius:10px;width:400px;overflow:hidden;height:calc(100vh - 130px);background-color:#fff}.m-chat-wrapper.sc-cnt-module-chat{height:calc(100vh - 170px)}.drop-file-wrapper.sc-cnt-module-chat{height:calc(100vh - 177px)}.content-chat.sc-cnt-module-chat .personal-wrapper.sc-cnt-module-chat .personal-message.sc-cnt-module-chat{height:calc(100vh - 370px)}.content-chat.sc-cnt-module-chat .personal-footer.sc-cnt-module-chat .footer-wrapper.sc-cnt-module-chat{border-radius:10px 10px 5px 5px}.content-chat.sc-cnt-module-chat .profile.sc-cnt-module-chat .mobile.sc-cnt-module-chat{height:100vh;overflow:auto}@media (max-width: 414px){.wrapper-chat.sc-cnt-module-chat{border-radius:0px}.wrapper-chat.sc-cnt-module-chat{width:414px;height:100vh}.content-chat.sc-cnt-module-chat .personal-wrapper.sc-cnt-module-chat .personal-message.sc-cnt-module-chat{height:calc(100vh - 215px)}}.wrapper-modal.sc-cnt-module-chat{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:end;justify-content:flex-end;-ms-flex-direction:column;flex-direction:column;position:fixed;top:2%;right:2%;z-index:999}.message.sc-cnt-module-chat{font-size:14px;height:21px;overflow:hidden;width:260px;margin-top:5px;white-space:nowrap;cursor:pointer}.user.sc-cnt-module-chat{display:-ms-flexbox;display:flex;cursor:pointer;-ms-flex-align:end;align-items:flex-end}.user-img.sc-cnt-module-chat{width:20%;margin:auto}.user-img.sc-cnt-module-chat .img.sc-cnt-module-chat{width:43px;height:43px;border-radius:50%;background-size:cover;margin:auto}.user-info.sc-cnt-module-chat{display:-ms-flexbox;display:flex;-ms-flex-pack:justify;justify-content:space-between;width:90%}.user-info.sc-cnt-module-chat .name.sc-cnt-module-chat{font-weight:500;font-size:13px}.sc-cnt-module-chat::-webkit-scrollbar{width:5px}.sc-cnt-module-chat::-webkit-scrollbar-track{-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);-webkit-border-radius:5px;border-radius:3px}.sc-cnt-module-chat::-webkit-scrollbar-thumb{-webkit-border-radius:10px;border-radius:10px;background:rgba(108, 108, 108, 0.8);-webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5)}.sc-cnt-module-chat::-webkit-scrollbar-thumb:window-inactive{background:rgba(106, 106, 106, 0.4)}@media (max-width: 414px){.wrapper-modal.sc-cnt-module-chat{top:0%;right:0%;max-width:414px}.wrapper-chat.sc-cnt-module-chat{width:414px}.personal-messages.sc-cnt-module-chat{height:80vh}.users.sc-cnt-module-chat{height:80vh}.m-chat-wrapper.sc-cnt-module-chat{height:calc(100vh - 40px)}}@media (max-width: 375px){.wrapper-chat.sc-cnt-module-chat{max-width:375px;padding-right:0px}.users.sc-cnt-module-chat{padding:0px 10px}.new-mess.sc-cnt-module-chat{right:12%}}@media (max-width: 320px){.wrapper-chat.sc-cnt-module-chat{max-width:320px}.chat-header.sc-cnt-module-chat a.sc-cnt-module-chat{right:25%}.message-date.sc-cnt-module-chat{font-size:11px}.users.sc-cnt-module-chat{padding:0px 25px}.personal-messages.sc-cnt-module-chat{padding:0 10px}}";
 
@@ -55,7 +55,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
         _classCallCheck(this, CntModuleChat);
 
-        Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef); // /**
+        Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef); // /**
         //  * Заголовок для чата
         //  * */
         // @Prop() titleModule: TitleModuleInterface;
@@ -74,7 +74,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
          * select content default
          * */
 
-        this.chatViewState = _index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].dialogs; //============================================================================================
+        this.chatViewState = _index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].dialogs; //============================================================================================
 
         /**
          * Возможность записи аудио
@@ -109,7 +109,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           // console.log("ShowContent", content);
           switch (content) {
             case "dialogs":
-              return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-saqhan-chat-users-wrapper", {
+              return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-saqhan-chat-users-wrapper", {
                 dialogs: _this.dialogsState,
                 categories: _this.categoriesState,
                 onClickToCategory: function onClickToCategory(item) {
@@ -133,7 +133,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               return (// <div class='drop-file-wrapper' >
                 //   <s-adam-copying></s-adam-copying>
                 // </div>
-                Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("module-personal", {
+                Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("module-personal", {
                   chatPresenceState: _this.chatPresenceState,
                   openedDialog: _this.openedDialog,
                   chatActionState: _this.chatActionState,
@@ -160,7 +160,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               );
 
             case "files":
-              return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-saqhan-chat-files-wrapper", {
+              return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-saqhan-chat-files-wrapper", {
                 // onClickToLink={(item) => this.clickToLink(item.detail)}
                 onClickToShowDialogs: function onClickToShowDialogs() {
                   return _this.clickToShowDialogsHandler();
@@ -168,7 +168,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
             case "profile":
-              return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-adam-profile", {
+              return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("s-adam-profile", {
                 theme: "module",
                 categories: _this.categoriesState,
                 onClickToShowDialogs: function onClickToShowDialogs() {
@@ -180,7 +180,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
             case "contacts":
-              return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("contacts-list", {
+              return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("contacts-list", {
                 theme: "module",
                 contacts: _this.contacts,
                 // onSearchContact={(detail) => this.searchContact({ detail })}
@@ -190,7 +190,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
               });
 
             case "folders":
-              return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("user-folders", {
+              return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("user-folders", {
                 onCreateFolder: function onCreateFolder(e) {
                   return _this.createFolderHandler(e.detail);
                 },
@@ -202,13 +202,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
         };
 
-        this.showFullChat = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "showFullChat", 7);
-        this.createFolder = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "createFolder", 7);
-        this.clickToDialog = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToDialog", 7);
-        this.sendTextMessage = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "sendTextMessage", 7);
-        this.clickToFilesBtn = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToFilesBtn", 7);
-        this.searchContact = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "searchContact", 7);
-        this.chatViewStateChange = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "chatViewStateChange", 7);
+        this.showFullChat = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "showFullChat", 7);
+        this.createFolder = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "createFolder", 7);
+        this.clickToDialog = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToDialog", 7);
+        this.sendTextMessage = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "sendTextMessage", 7);
+        this.clickToFilesBtn = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "clickToFilesBtn", 7);
+        this.searchContact = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "searchContact", 7);
+        this.chatViewStateChange = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "chatViewStateChange", 7);
       }
       /**
        * позволяет установить печатающие данные
@@ -583,15 +583,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function render() {
           var _this2 = this;
 
-          return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
+          return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["H"], {
             style: {
               display: !this.visibleState ? "none" : null
             }
-          }, Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "wrapper-modal"
-          }, this.openState ? Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, this.openState ? Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "wrapper-chat"
-          }, Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("module-header", {
+          }, Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("module-header", {
             disableShowFullChatState: this.disableShowFullChatState,
             onShowFullChat: function onShowFullChat() {
               return _this2.showFullChatHandler();
@@ -599,9 +599,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
             onClose: function onClose() {
               return _this2.onClose();
             }
-          }), Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }), Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "m-chat-wrapper"
-          }, this.ShowContent(this.chatViewState))) : "", Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("btn-wrapper", {
+          }, this.ShowContent(this.chatViewState))) : "", Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("btn-wrapper", {
             onClickToShowChat: function onClickToShowChat() {
               return _this2.showChat();
             },
@@ -616,7 +616,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "updateDictionary",
         value: function updateDictionary(newValue) {
-          _utils_4870d924_js__WEBPACK_IMPORTED_MODULE_2__["a"].dictionary$.next(newValue); // console.log("changed - dictionary");
+          _utils_f6ec1f87_js__WEBPACK_IMPORTED_MODULE_1__["C"].dictionary$.next(newValue); // console.log("changed - dictionary");
 
         }
       }, {
@@ -646,10 +646,10 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           var filteredDialogsBySearchValue = allDialogs;
 
           if (!this.disableInnerSearchDialogsState) {
-            filteredDialogsBySearchValue = Object(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["h"])(searchValue, allDialogs);
+            filteredDialogsBySearchValue = Object(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["g"])(searchValue, allDialogs);
           }
 
-          this.dialogsState = Object(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["i"])(category, filteredDialogsBySearchValue);
+          this.dialogsState = Object(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["h"])(category, filteredDialogsBySearchValue);
         }
         /**
          * search for private messages
@@ -659,7 +659,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         key: "searchPersonalMessages",
         value: function searchPersonalMessages(value) {
           if (!this.disableInnerSearchMessagesState) {
-            this.messageState = Object(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["j"])(value, this.message);
+            this.messageState = Object(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["i"])(value, this.message);
           }
         }
       }, {
@@ -716,7 +716,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           }
 
           this.openedDialog = dialog;
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].personal);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].personal);
         }
         /**
          *
@@ -725,7 +725,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "clickToFilesBtnHandler",
         value: function clickToFilesBtnHandler() {
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].files);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].files);
         }
         /**
          *
@@ -736,7 +736,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function showFullChatHandler() {
           this.showFullChat.emit({
             view: this.chatViewState,
-            data: this.chatViewState === _index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].personal ? this.openedDialog : null
+            data: this.chatViewState === _index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].personal ? this.openedDialog : null
           });
         }
         /**
@@ -746,7 +746,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "clickToShowDialogsHandler",
         value: function clickToShowDialogsHandler() {
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].dialogs);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].dialogs);
         }
         /**
          *
@@ -755,7 +755,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "clickToUserProfileHandler",
         value: function clickToUserProfileHandler() {
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].profile);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].profile);
         }
         /**
          *
@@ -764,7 +764,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "sendNewMessModal",
         value: function sendNewMessModal() {
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].contacts);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].contacts);
         }
         /**
          *
@@ -773,7 +773,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "clickToShowFoldersHandler",
         value: function clickToShowFoldersHandler() {
-          this.updateViewState(_index_bfa1c413_js__WEBPACK_IMPORTED_MODULE_1__["g"].folders);
+          this.updateViewState(_index_582bc2f2_js__WEBPACK_IMPORTED_MODULE_2__["e"].folders);
         }
         /**
          *
@@ -782,7 +782,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "scrollMessageViewToBot",
         value: function scrollMessageViewToBot() {
-          _utils_4870d924_js__WEBPACK_IMPORTED_MODULE_2__["C"].safeScrollToBot();
+          _utils_f6ec1f87_js__WEBPACK_IMPORTED_MODULE_1__["a"].safeScrollToBot();
         }
         /**
          * */
@@ -795,7 +795,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       }, {
         key: "el",
         get: function get() {
-          return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this);
+          return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["g"])(this);
         }
       }], [{
         key: "watchers",
@@ -814,359 +814,6 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     CntModuleChat.style = cntModuleChatCss;
     /***/
-  },
-
-  /***/
-  "./node_modules/stencil-chat/dist/esm/index-bfa1c413.js":
-  /*!**************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/index-bfa1c413.js ***!
-    \**************************************************************/
-
-  /*! exports provided: C, a, b, c, d, e, f, g, h, i, j, s */
-
-  /***/
-  function node_modulesStencilChatDistEsmIndexBfa1c413Js(module, __webpack_exports__, __webpack_require__) {
-    "use strict";
-
-    __webpack_require__.r(__webpack_exports__);
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "C", function () {
-      return ChatMessageDirectionEnum;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "a", function () {
-      return ChatMessageTypeEnum;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "b", function () {
-      return ChatUserPresenceState;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "c", function () {
-      return chatConvertWritingStatusToMessage;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "d", function () {
-      return ChatUserActionStatusState;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "e", function () {
-      return createTextMessage;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "f", function () {
-      return filterContactBySearchValue;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "g", function () {
-      return ChatViewToShowEnum;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "h", function () {
-      return filterDialogsBySearchValue;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "i", function () {
-      return filterDialogsByCategory;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "j", function () {
-      return filterMessageBySearchValue;
-    });
-    /* harmony export (binding) */
-
-
-    __webpack_require__.d(__webpack_exports__, "s", function () {
-      return scrollToBot;
-    });
-    /**
-     *
-     * */
-
-
-    var ChatMessageDirectionEnum;
-
-    (function (ChatMessageDirectionEnum) {
-      /**
-       * сообщения написал кто то другой, и получено мною
-       * */
-      ChatMessageDirectionEnum[ChatMessageDirectionEnum["toMe"] = 0] = "toMe";
-      /**
-       * сообщения написал я
-       * */
-
-      ChatMessageDirectionEnum[ChatMessageDirectionEnum["fromMe"] = 1] = "fromMe";
-      /**
-       * сообщения которое будет отображаться в центре
-       * */
-
-      ChatMessageDirectionEnum[ChatMessageDirectionEnum["center"] = 2] = "center";
-    })(ChatMessageDirectionEnum || (ChatMessageDirectionEnum = {}));
-    /**
-     *
-     * */
-
-
-    var ChatMessageTypeEnum;
-
-    (function (ChatMessageTypeEnum) {
-      /**
-       * сообщения написал кто то другой, и получено мною
-       * */
-      ChatMessageTypeEnum["text"] = "text";
-      /**
-       * аудио сообщения записанное самим пользователем
-       * */
-
-      ChatMessageTypeEnum["liveAudio"] = "live-audio";
-      /**
-       * аудио сообщение любое которое не записано самим пользователем
-       * */
-
-      ChatMessageTypeEnum["audio"] = "audio";
-      /**
-       * фотка сделанная на устройстве пользователя и отправленная сразу
-       * */
-
-      ChatMessageTypeEnum["liveImage"] = "live-image";
-      /**
-       * фотка из устройства отправителя
-       * */
-
-      ChatMessageTypeEnum["image"] = "image";
-      /**
-       * видео сделанная на устройстве пользователя и отправленная сразу
-       * */
-
-      ChatMessageTypeEnum["liveVideo"] = "live-video";
-      /**
-       * видео из устройства отправителя
-       * */
-
-      ChatMessageTypeEnum["video"] = "video";
-      /**
-       * файл из устройства отправителя
-       * */
-
-      ChatMessageTypeEnum["file"] = "file";
-      /**
-       * timestamp
-       * */
-
-      ChatMessageTypeEnum["date"] = "date";
-      /**
-       * Печатает сообщение
-       */
-
-      ChatMessageTypeEnum["loading"] = "loading";
-    })(ChatMessageTypeEnum || (ChatMessageTypeEnum = {}));
-
-    var ChatLinkTypeEnum;
-
-    (function (ChatLinkTypeEnum) {
-      ChatLinkTypeEnum["showFile"] = "showFile";
-      ChatLinkTypeEnum["showDialogs"] = "showDialogs";
-      ChatLinkTypeEnum["showPersonalDialog"] = "showPersonalDialog";
-      ChatLinkTypeEnum["userNamePersonal"] = "user-name-personal";
-      ChatLinkTypeEnum["addDialog"] = "\"add-dialog\"";
-      ChatLinkTypeEnum["fromMobileContacts"] = "\"contacts\"";
-      ChatLinkTypeEnum["fromMobileMenuBar"] = "menu-bar";
-    })(ChatLinkTypeEnum || (ChatLinkTypeEnum = {}));
-    /**
-     *
-     * */
-
-
-    function chatConvertWritingStatusToMessage(writing) {
-      return {
-        /**
-         * содержимое сообщения
-         * */
-        content: null,
-
-        /**
-         * тип сообщения
-         * */
-        type: ChatMessageTypeEnum.loading,
-
-        /** время создание */
-        time: {
-          /** время создания */
-          created: Date.now()
-        },
-
-        /**
-         * направления сообщения
-         * */
-        direction: ChatMessageDirectionEnum.toMe,
-
-        /**
-         * отправитель
-         * */
-        sender: {
-          uid: writing.uid,
-          icon: writing.icon,
-          name: writing.name,
-          phone: writing.phone
-        }
-      };
-    } // /**
-    //  * dialogue search
-    //  * */
-    //  export function ChatSearchDialog(value: string) {
-    //   if (!this.disableInnerSearchDialogs) {
-    //     this.dialogsState = filterDialogsBySearchValue(
-    //       value,
-    //       this.dialogs
-    //     );
-    //   }
-    // }
-    // /**
-    //  * search for private messages
-    //  * */
-    //  export function ChatSearchPersonalMessages(value: string ) {
-    //   if (!this.disableInnerSearchMessages) {
-    //     this.messageState = filterMessageBySearchValue(
-    //       value,
-    //       this.message
-    //     )
-    //   }
-    // }
-
-    /**
-     * создание текстового сообщения
-     * */
-
-
-    function createTextMessage(text, sender, options) {
-      return createMessage(ChatMessageTypeEnum.text, text, sender, options);
-    }
-    /**
-     * создание сообщения
-     * */
-
-
-    function createMessage(type, content, sender, options) {
-      var _a, _b, _c, _d, _e, _f, _g;
-
-      return {
-        content: content,
-        sender: sender,
-        type: type,
-        direction: (_a = options === null || options === void 0 ? void 0 : options.direction) !== null && _a !== void 0 ? _a : ChatMessageDirectionEnum.fromMe,
-        time: {
-          created: (_c = (_b = options === null || options === void 0 ? void 0 : options.time) === null || _b === void 0 ? void 0 : _b.created) !== null && _c !== void 0 ? _c : new Date(),
-          delivery: (_e = (_d = options === null || options === void 0 ? void 0 : options.time) === null || _d === void 0 ? void 0 : _d.created) !== null && _e !== void 0 ? _e : null,
-          read: (_g = (_f = options === null || options === void 0 ? void 0 : options.time) === null || _f === void 0 ? void 0 : _f.created) !== null && _g !== void 0 ? _g : null
-        }
-      };
-    }
-    /**
-     * filter message by search value
-     * */
-
-
-    function filterMessageBySearchValue(value, message) {
-      return value ? message.filter(function (item) {
-        return typeof item.content === "string" ? item.content.toLowerCase().includes(value.toLowerCase()) : false;
-      }) : message;
-    }
-    /**
-     * filter dialogs by search value
-     * */
-
-
-    function filterDialogsBySearchValue(value, dialogs) {
-      return value ? dialogs.filter(function (item) {
-        return typeof item.name === "string" ? item.name.toLowerCase().includes(value.toLowerCase()) : false;
-      }) : dialogs;
-    }
-    /**
-     * filter contact by search value
-     * */
-
-
-    function filterContactBySearchValue(value, contacts) {
-      return value ? contacts.filter(function (item) {
-        return typeof item.name === "string" ? item.name.toLowerCase().includes(value.toLowerCase()) : false;
-      }) : contacts;
-    }
-    /**
-     * filter dialogs by category id
-     * */
-
-
-    function filterDialogsByCategory(category, dialogs) {
-      return category && category.id !== "all" ? dialogs.filter(function (dialog) {
-        return dialog.category === category.id;
-      }) : dialogs;
-    }
-
-    var ChatViewToShowEnum;
-
-    (function (ChatViewToShowEnum) {
-      ChatViewToShowEnum["files"] = "files";
-      ChatViewToShowEnum["dialogs"] = "dialogs";
-      ChatViewToShowEnum["personal"] = "personal";
-      ChatViewToShowEnum["profile"] = "profile";
-      ChatViewToShowEnum["users"] = "users";
-      ChatViewToShowEnum["contacts"] = "contacts";
-      ChatViewToShowEnum["folders"] = "folders";
-    })(ChatViewToShowEnum || (ChatViewToShowEnum = {}));
-
-    var ChatUserActionStatusState;
-
-    (function (ChatUserActionStatusState) {
-      ChatUserActionStatusState["writing"] = "writing";
-      ChatUserActionStatusState["audioRecording"] = "audio-recording";
-    })(ChatUserActionStatusState || (ChatUserActionStatusState = {}));
-
-    var ChatUserPresenceState;
-
-    (function (ChatUserPresenceState) {
-      ChatUserPresenceState[ChatUserPresenceState["offline"] = 0] = "offline";
-      ChatUserPresenceState[ChatUserPresenceState["online"] = 1] = "online";
-    })(ChatUserPresenceState || (ChatUserPresenceState = {}));
-
-    function scrollToBot(scrollContainer, options) {
-      var _a;
-
-      var timer = (_a = options === null || options === void 0 ? void 0 : options.timer) !== null && _a !== void 0 ? _a : 100,
-          y = options === null || options === void 0 ? void 0 : options.y,
-          cb = function cb() {
-        scrollContainer.scrollBy(0, y !== null && y !== void 0 ? y : scrollContainer.scrollHeight);
-      };
-
-      if (timer) {
-        setTimeout(cb, timer);
-      } else {
-        cb();
-      }
-    }
-    /***/
-
   }
 }]);
 //# sourceMappingURL=stencil-cnt-module-chat-entry-js-es5.js.map

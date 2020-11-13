@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-polyfills-dom"],{
 
-/***/ "./node_modules/stencil-chat/dist/esm/dom-e7fe74ef.js":
-/*!************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/dom-e7fe74ef.js ***!
-  \************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/dom-e7fe74ef.js":
+/*!******************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/dom-e7fe74ef.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -84,10 +84,10 @@ DOMTokenList
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm/polyfills/dom.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/polyfills/dom.js ***!
-  \*************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/polyfills/dom.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/polyfills/dom.js ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

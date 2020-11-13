@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-polyfills-css-shim"],{
 
-/***/ "./node_modules/stencil-chat/dist/esm/css-shim-d61c58a9.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/css-shim-d61c58a9.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/css-shim-d61c58a9.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/css-shim-d61c58a9.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

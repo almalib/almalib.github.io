@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-polyfills-core-js"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/polyfills/core-js.js":
-  /*!*****************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/polyfills/core-js.js ***!
-    \*****************************************************************/
+  "./node_modules/s-chat/dist/esm/polyfills/core-js.js":
+  /*!***********************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/polyfills/core-js.js ***!
+    \***********************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesStencilChatDistEsmPolyfillsCoreJsJs(module, exports, __webpack_require__) {
+  function node_modulesSChatDistEsmPolyfillsCoreJsJs(module, exports, __webpack_require__) {
     /**
      * core-js 3.2.0
      * https://github.com/zloirock/core-js

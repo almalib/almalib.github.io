@@ -6,15 +6,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-s-adam-search-contact-entry-js"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/s-adam-search-contact.entry.js":
-  /*!***************************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/s-adam-search-contact.entry.js ***!
-    \***************************************************************************/
+  "./node_modules/s-chat/dist/esm/s-adam-search-contact.entry.js":
+  /*!*********************************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/s-adam-search-contact.entry.js ***!
+    \*********************************************************************/
 
   /*! exports provided: s_adam_search_contact */
 
   /***/
-  function node_modulesStencilChatDistEsmSAdamSearchContactEntryJs(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesSChatDistEsmSAdamSearchContactEntryJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -27,9 +27,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_53235049_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./index-53235049.js */
-    "./node_modules/stencil-chat/dist/esm/index-53235049.js");
+    var _index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./index-063f1606.js */
+    "./node_modules/s-chat/dist/esm/index-063f1606.js");
 
     var sAdamSearchContactCss = ".search-contact-block{margin-bottom:20px}.search-contact-wrapper{position:relative}.search-contact-wrapper .c-chat{position:absolute;left:15px;font-size:12px;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);color:#bacbe3}.search-contact{border:none;padding:10px 40px;width:100%;outline:none}input::-moz-placeholder{color:#979eab}input::-webkit-input-placeholder{color:#979eab}";
 
@@ -37,8 +37,8 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function SAdamSearchContact(hostRef) {
         _classCallCheck(this, SAdamSearchContact);
 
-        Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
-        this.searchDialogs = Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "searchDialogs", 7);
+        Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        this.searchDialogs = Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["c"])(this, "searchDialogs", 7);
       }
 
       _createClass(SAdamSearchContact, [{
@@ -46,13 +46,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         value: function render() {
           var _this = this;
 
-          return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "search-contact-block"
-          }, Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          }, Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "search-contact-wrapper"
-          }, Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", {
+          }, Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("i", {
             "class": "c-chat c-chat-search"
-          }), Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("input", {
+          }), Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("input", {
             onInput: function onInput(e) {
               return _this.searchDialogHandler(e);
             },

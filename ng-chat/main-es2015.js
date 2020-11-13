@@ -23,65 +23,70 @@ webpackEmptyAsyncContext.id = "./$$_lazy_route_resource lazy recursive";
 
 /***/ }),
 
-/***/ "./node_modules/stencil-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$":
-/*!******************************************************************************************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm lazy ^\.\/.*\.entry\.js$ include: \.entry\.js$ exclude: \.system\.entry\.js$ namespace object ***!
-  \******************************************************************************************************************************************/
+/***/ "./node_modules/s-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm lazy ^\.\/.*\.entry\.js$ include: \.entry\.js$ exclude: \.system\.entry\.js$ namespace object ***!
+  \************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./btn-wrapper_10.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/btn-wrapper_10.entry.js",
-		"stencil-btn-wrapper_10-entry-js"
+	"./btn-wrapper_11.entry.js": [
+		"./node_modules/s-chat/dist/esm/btn-wrapper_11.entry.js",
+		"stencil-btn-wrapper_11-entry-js"
 	],
 	"./cnt-module-chat.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/cnt-module-chat.entry.js",
-		"default~stencil-cnt-module-chat-entry-js~stencil-contact-card_24-entry-js",
+		"./node_modules/s-chat/dist/esm/cnt-module-chat.entry.js",
+		"default~stencil-cnt-module-chat-entry-js~stencil-contact-card_21-entry-js~stencil-personal-header_2-entry-js",
 		"stencil-cnt-module-chat-entry-js"
 	],
-	"./contact-card_24.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/contact-card_24.entry.js",
-		"default~stencil-contact-card_24-entry-js~stencil-module-chat-entry-js~stencil-s-adam-chat-entry-js",
-		"default~stencil-cnt-module-chat-entry-js~stencil-contact-card_24-entry-js",
-		"stencil-contact-card_24-entry-js"
+	"./contact-card_21.entry.js": [
+		"./node_modules/s-chat/dist/esm/contact-card_21.entry.js",
+		"default~stencil-cnt-module-chat-entry-js~stencil-contact-card_21-entry-js~stencil-personal-header_2-entry-js",
+		"default~stencil-contact-card_21-entry-js~stencil-mobile-chat-entry-js~stencil-module-chat-entry-js",
+		"stencil-contact-card_21-entry-js"
+	],
+	"./contacts-list-body_3.entry.js": [
+		"./node_modules/s-chat/dist/esm/contacts-list-body_3.entry.js",
+		"stencil-contacts-list-body_3-entry-js"
+	],
+	"./m-chat-dialogs_2.entry.js": [
+		"./node_modules/s-chat/dist/esm/m-chat-dialogs_2.entry.js",
+		"stencil-m-chat-dialogs_2-entry-js"
+	],
+	"./mobile-chat.entry.js": [
+		"./node_modules/s-chat/dist/esm/mobile-chat.entry.js",
+		"default~stencil-contact-card_21-entry-js~stencil-mobile-chat-entry-js~stencil-module-chat-entry-js",
+		"stencil-mobile-chat-entry-js"
+	],
+	"./mobile-dialogs_2.entry.js": [
+		"./node_modules/s-chat/dist/esm/mobile-dialogs_2.entry.js",
+		"stencil-mobile-dialogs_2-entry-js"
 	],
 	"./module-chat.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/module-chat.entry.js",
-		"default~stencil-contact-card_24-entry-js~stencil-module-chat-entry-js~stencil-s-adam-chat-entry-js",
+		"./node_modules/s-chat/dist/esm/module-chat.entry.js",
+		"default~stencil-contact-card_21-entry-js~stencil-mobile-chat-entry-js~stencil-module-chat-entry-js",
 		"stencil-module-chat-entry-js"
 	],
-	"./s-adam-chat.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-chat.entry.js",
-		"default~stencil-contact-card_24-entry-js~stencil-module-chat-entry-js~stencil-s-adam-chat-entry-js",
-		"stencil-s-adam-chat-entry-js"
-	],
-	"./s-adam-contacts_5.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-contacts_5.entry.js",
-		"stencil-s-adam-contacts_5-entry-js"
+	"./personal-header_2.entry.js": [
+		"./node_modules/s-chat/dist/esm/personal-header_2.entry.js",
+		"default~stencil-cnt-module-chat-entry-js~stencil-contact-card_21-entry-js~stencil-personal-header_2-entry-js",
+		"stencil-personal-header_2-entry-js"
 	],
 	"./s-adam-copying.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-copying.entry.js",
+		"./node_modules/s-chat/dist/esm/s-adam-copying.entry.js",
 		"stencil-s-adam-copying-entry-js"
 	],
-	"./s-adam-nav-item.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-nav-item.entry.js",
-		"stencil-s-adam-nav-item-entry-js"
-	],
-	"./s-adam-personal-header.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-personal-header.entry.js",
-		"stencil-s-adam-personal-header-entry-js"
-	],
 	"./s-adam-search-contact.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-adam-search-contact.entry.js",
+		"./node_modules/s-chat/dist/esm/s-adam-search-contact.entry.js",
 		"stencil-s-adam-search-contact-entry-js"
 	],
 	"./s-saqhan-chat-user.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/s-saqhan-chat-user.entry.js",
+		"./node_modules/s-chat/dist/esm/s-saqhan-chat-user.entry.js",
 		"stencil-s-saqhan-chat-user-entry-js"
 	],
 	"./user-profile.entry.js": [
-		"./node_modules/stencil-chat/dist/esm/user-profile.entry.js",
+		"./node_modules/s-chat/dist/esm/user-profile.entry.js",
 		"stencil-user-profile-entry-js"
 	]
 };
@@ -102,7 +107,7 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = "./node_modules/stencil-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$";
+webpackAsyncContext.id = "./node_modules/s-chat/dist/esm lazy recursive ^\\.\\/.*\\.entry\\.js$ include: \\.entry\\.js$ exclude: \\.system\\.entry\\.js$";
 module.exports = webpackAsyncContext;
 
 /***/ }),
@@ -313,7 +318,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CategoriesMock", function() { return CategoriesMock; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ContactsMock", function() { return ContactsMock; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MessageMock", function() { return MessageMock; });
-/* harmony import */ var stencil_chat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! stencil-chat */ "./node_modules/stencil-chat/dist/esm/index.mjs");
+/* harmony import */ var s_chat__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! s-chat */ "./node_modules/s-chat/dist/esm/index.mjs");
 
 const DialogsMock = [
     {
@@ -718,22 +723,22 @@ const MessageMock = [
             name: 'Сайхан',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
         time: {
             created: new Date(),
         },
     },
     {
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit',
+        content: 'Не знаешь, что за ошибка?',
         sender: {
             uid: 'test-id-1',
             icon: 'https://via.placeholder.com/60x60?text=User',
             name: 'Сайхан',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
         time: {
             created: new Date(),
         },
@@ -746,8 +751,8 @@ const MessageMock = [
             name: '',
             phone: '',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].center,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].center,
         time: {
             created: new Date(),
         },
@@ -760,8 +765,8 @@ const MessageMock = [
             name: 'Сайхан',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].image,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].image,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
         time: {
             created: new Date(),
             delivery: new Date(),
@@ -776,8 +781,8 @@ const MessageMock = [
             name: '',
             phone: '',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].date,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].center,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].date,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].center,
         time: {
             created: new Date(),
         },
@@ -790,8 +795,8 @@ const MessageMock = [
             name: 'Адам',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
         time: {
             created: new Date(),
             delivery: new Date(),
@@ -799,15 +804,15 @@ const MessageMock = [
         },
     },
     {
-        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, Lorem ipsum dolor sit amet, consectetur adipiscing elit df sss',
+        content: 'Сейчас кину скрин решения',
         sender: {
             uid: 'test-id-2',
             icon: 'https://via.placeholder.com/60x60?text=User',
             name: 'Адам',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
         time: {
             created: new Date(),
             read: new Date(),
@@ -821,8 +826,8 @@ const MessageMock = [
             name: 'Адам',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].image,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].image,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
         time: {
             created: new Date(),
         },
@@ -835,8 +840,8 @@ const MessageMock = [
             name: 'Сайхан',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
         time: {
             created: new Date(),
         },
@@ -849,8 +854,8 @@ const MessageMock = [
             name: 'Адам',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].fromMe,
         time: {
             created: new Date(),
         },
@@ -863,8 +868,8 @@ const MessageMock = [
             name: 'Сайхан',
             phone: '79291234567',
         },
-        type: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
-        direction: stencil_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
+        type: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageTypeEnum"].text,
+        direction: s_chat__WEBPACK_IMPORTED_MODULE_0__["ChatMessageDirectionEnum"].toMe,
         time: {
             created: new Date(),
         },
@@ -1043,7 +1048,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
 /* harmony import */ var _mock__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../mock */ "./src/app/mock.ts");
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
-/* harmony import */ var stencil_chat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! stencil-chat */ "./node_modules/stencil-chat/dist/esm/index.mjs");
+/* harmony import */ var s_chat__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! s-chat */ "./node_modules/s-chat/dist/esm/index.mjs");
 
 
 
@@ -1095,7 +1100,7 @@ class ApiLayerService {
      *
      * */
     sendTextMessage(content, sender) {
-        this.lastMessages.push(Object(stencil_chat__WEBPACK_IMPORTED_MODULE_4__["createTextMessage"])(content, sender));
+        this.lastMessages.push(Object(s_chat__WEBPACK_IMPORTED_MODULE_4__["createTextMessage"])(content, sender));
         this.messages$.next(this.lastMessages);
     }
 }
@@ -1274,7 +1279,7 @@ class StoreService {
          */
         this.logo = {
             id: 'logo',
-            logo: 'https://via.placeholder.com/100x100?text=Text',
+            logo: 'https://via.placeholder.com/60x60?text=User',
         };
         /**
          * Иконки навигации комп версии
@@ -1297,18 +1302,6 @@ class StoreService {
             {
                 id: 2,
                 icon: 'fas fa-shopping-bag',
-            },
-            {
-                id: 3,
-                icon: 'fas fa-cart-arrow-down',
-            },
-            {
-                id: 5,
-                icon: 'fas fa-calendar-alt',
-            },
-            {
-                id: 6,
-                icon: 'fas fa-cog',
             },
         ];
         /**
@@ -1462,7 +1455,7 @@ const environment = {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
-/* harmony import */ var stencil_chat_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! stencil-chat/loader */ "./node_modules/stencil-chat/loader/index.es2017.mjs");
+/* harmony import */ var s_chat_loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! s-chat/loader */ "./node_modules/s-chat/loader/index.es2017.mjs");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 
@@ -1477,7 +1470,7 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_1__["environment"].produc
 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_4__["platformBrowser"]().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_3__["AppModule"])
     .catch(err => console.error(err));
 // stencil js - source
-Object(stencil_chat_loader__WEBPACK_IMPORTED_MODULE_2__["defineCustomElements"])(window);
+Object(s_chat_loader__WEBPACK_IMPORTED_MODULE_2__["defineCustomElements"])(window);
 
 
 /***/ }),
@@ -1489,7 +1482,7 @@ Object(stencil_chat_loader__WEBPACK_IMPORTED_MODULE_2__["defineCustomElements"])
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Адам\Desktop\Angular-D4\ng-chat\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\Адам\Desktop\Chat\ng-chat\src\main.ts */"./src/main.ts");
 
 
 /***/ })

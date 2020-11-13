@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-polyfills-core-js"],{
 
-/***/ "./node_modules/stencil-chat/dist/esm/polyfills/core-js.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/stencil-chat/dist/esm/polyfills/core-js.js ***!
-  \*****************************************************************/
+/***/ "./node_modules/s-chat/dist/esm/polyfills/core-js.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/s-chat/dist/esm/polyfills/core-js.js ***!
+  \***********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 

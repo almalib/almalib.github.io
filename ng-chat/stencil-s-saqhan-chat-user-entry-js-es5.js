@@ -6,15 +6,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-s-saqhan-chat-user-entry-js"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/s-saqhan-chat-user.entry.js":
-  /*!************************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/s-saqhan-chat-user.entry.js ***!
-    \************************************************************************/
+  "./node_modules/s-chat/dist/esm/s-saqhan-chat-user.entry.js":
+  /*!******************************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/s-saqhan-chat-user.entry.js ***!
+    \******************************************************************/
 
   /*! exports provided: s_saqhan_chat_user */
 
   /***/
-  function node_modulesStencilChatDistEsmSSaqhanChatUserEntryJs(module, __webpack_exports__, __webpack_require__) {
+  function node_modulesSChatDistEsmSSaqhanChatUserEntryJs(module, __webpack_exports__, __webpack_require__) {
     "use strict";
 
     __webpack_require__.r(__webpack_exports__);
@@ -27,9 +27,9 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
     /* harmony import */
 
 
-    var _index_53235049_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
-    /*! ./index-53235049.js */
-    "./node_modules/stencil-chat/dist/esm/index-53235049.js");
+    var _index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+    /*! ./index-063f1606.js */
+    "./node_modules/s-chat/dist/esm/index-063f1606.js");
 
     var sSaqhanChatUserCss = "";
 
@@ -37,15 +37,15 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function SSaqhanChatUser(hostRef) {
         _classCallCheck(this, SSaqhanChatUser);
 
-        Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
+        Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["r"])(this, hostRef);
       }
 
       _createClass(SSaqhanChatUser, [{
         key: "render",
         value: function render() {
-          return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
+          return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("div", {
             "class": "user-wrapper"
-          }, Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])(UserMessage, {
+          }, Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])(UserMessage, {
             user: this.dialogs
           }));
         }
@@ -60,7 +60,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var UserMessage = function UserMessage(props) {
       return props.user.map(function (item) {
-        return Object(_index_53235049_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dialog-card", {
+        return Object(_index_063f1606_js__WEBPACK_IMPORTED_MODULE_0__["h"])("dialog-card", {
           mess: item
         });
       });

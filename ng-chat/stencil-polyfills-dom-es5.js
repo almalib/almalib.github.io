@@ -1,14 +1,14 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["stencil-polyfills-dom"], {
   /***/
-  "./node_modules/stencil-chat/dist/esm/dom-e7fe74ef.js":
-  /*!************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/dom-e7fe74ef.js ***!
-    \************************************************************/
+  "./node_modules/s-chat/dist/esm/dom-e7fe74ef.js":
+  /*!******************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/dom-e7fe74ef.js ***!
+    \******************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesStencilChatDistEsmDomE7fe74efJs(module, exports) {
+  function node_modulesSChatDistEsmDomE7fe74efJs(module, exports) {
     /*
      Stencil Client Platform v1.12.2 | MIT Licensed | https://stenciljs.com
      */
@@ -1039,15 +1039,15 @@
   },
 
   /***/
-  "./node_modules/stencil-chat/dist/esm/polyfills/dom.js":
-  /*!*************************************************************!*\
-    !*** ./node_modules/stencil-chat/dist/esm/polyfills/dom.js ***!
-    \*************************************************************/
+  "./node_modules/s-chat/dist/esm/polyfills/dom.js":
+  /*!*******************************************************!*\
+    !*** ./node_modules/s-chat/dist/esm/polyfills/dom.js ***!
+    \*******************************************************/
 
   /*! no static exports found */
 
   /***/
-  function node_modulesStencilChatDistEsmPolyfillsDomJs(module, exports) {
+  function node_modulesSChatDistEsmPolyfillsDomJs(module, exports) {
     (function () {
       /*
         Copyright (c) 2016 The Polymer Project Authors. All rights reserved.

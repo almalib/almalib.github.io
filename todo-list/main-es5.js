@@ -401,9 +401,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     SidebarComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
       type: SidebarComponent,
       selectors: [["app-sidebar"]],
-      decls: 8,
+      decls: 10,
       vars: 1,
-      consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"], ["href", "https://github.com/almalib/todo-list", "target", "_blank", 1, "text-dark"]],
+      consts: [[1, "list-group", "list-group-flush"], [1, "list-group-item", "px-0", "border-0"], ["href", "#", 1, "text-dark", 3, "click"], ["class", "list-group-item px-0 border-0", 4, "ngFor", "ngForOf"], [1, "list-group-item", "px-0", "border-0", "github-link"], ["width", "18", "aria-hidden", "true", "focusable", "false", "data-prefix", "fab", "data-icon", "github", "role", "img", "xmlns", "http://www.w3.org/2000/svg", "viewBox", "0 0 496 512", 1, "svg-inline--fa", "fa-github", "fa-w-16"], ["fill", "currentColor", "d", "M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"], ["href", "https://github.com/almalib/todo-list", "target", "_blank", 1, "text-dark"]],
       template: function SidebarComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 0);
@@ -424,11 +424,21 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, SidebarComponent_li_4_Template, 3, 1, "li", 3);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li", 4);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceSVG"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, " github ");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "svg", 5);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "path", 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceHTML"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 7);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, " GitHub ");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
@@ -444,7 +454,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         }
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_2__["NgForOf"]],
-      styles: ["\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3NpZGViYXIvc2lkZWJhci5jb21wb25lbnQuY3NzIn0= */"]
+      styles: [".github-link[_ngcontent-%COMP%] {\r\n  border-top: 1px solid #E2E2E2!important;\r\n  margin-top: 10px;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.github-link[_ngcontent-%COMP%]   a[_ngcontent-%COMP%] {\r\n  line-height: 16px;\r\n  margin-left: 5px;\r\n}\r\n\r\n.github-icon[_ngcontent-%COMP%] {\r\n  display: inline-block;\r\n  margin-right: 5px;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2lkZWJhci9zaWRlYmFyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSx1Q0FBdUM7RUFDdkMsZ0JBQWdCO0VBQ2hCLGFBQWE7RUFDYixtQkFBbUI7QUFDckI7O0FBRUE7RUFDRSxpQkFBaUI7RUFDakIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLGlCQUFpQjtBQUNuQiIsImZpbGUiOiJzcmMvYXBwL3NpZGViYXIvc2lkZWJhci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmdpdGh1Yi1saW5rIHtcclxuICBib3JkZXItdG9wOiAxcHggc29saWQgI0UyRTJFMiFpbXBvcnRhbnQ7XHJcbiAgbWFyZ2luLXRvcDogMTBweDtcclxuICBkaXNwbGF5OiBmbGV4O1xyXG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XHJcbn1cclxuXHJcbi5naXRodWItbGluayBhIHtcclxuICBsaW5lLWhlaWdodDogMTZweDtcclxuICBtYXJnaW4tbGVmdDogNXB4O1xyXG59XHJcblxyXG4uZ2l0aHViLWljb24ge1xyXG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcclxuICBtYXJnaW4tcmlnaHQ6IDVweDtcclxufVxyXG4iXX0= */"]
     });
     /*@__PURE__*/
 
@@ -867,9 +877,42 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
             this.getItems().push(item);
             selectCategory.classList.remove('error');
             text.classList.remove('error');
-          } else if (newItem === '' && itemCategory === 'Выбери категорию') {
-            selectCategory.classList.add('error');
+          } else if (newItem === '') {
             text.classList.add('error');
+          } else if (itemCategory === 'Выбери категорию') {
+            selectCategory.classList.add('error');
+          }
+        }
+        /**
+         *
+         * @param input
+         */
+
+      }, {
+        key: "inputCheck",
+        value: function inputCheck(input) {
+          var text = document.getElementById('text');
+
+          if (input === '') {
+            text.classList.add('error');
+          } else {
+            text.classList.remove('error');
+          }
+        }
+        /**
+         *
+         * @param category
+         */
+
+      }, {
+        key: "categoryCheck",
+        value: function categoryCheck(category) {
+          var selectCategory = document.getElementById('selectCategory');
+
+          if (category === 'Выбери категорию') {
+            selectCategory.classList.add('error');
+          } else {
+            selectCategory.classList.remove('error');
           }
         }
       }]);
@@ -886,7 +929,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       selectors: [["app-todos"]],
       decls: 26,
       vars: 3,
-      consts: [[1, "mt-2", "mb-2", "form-row"], [1, "col-6"], ["type", "text", "id", "text", "placeholder", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435", 1, "form-control"], ["newItemText", ""], [1, "col-4"], ["id", "selectCategory", 1, "form-control"], ["newItemCategory", ""], ["selected", "", "disabled", ""], [1, "col"], [1, "btn", "btn-success", "w-100", 3, "click"], [1, "d-flex", "justify-content-between"], ["href", "#", 1, "text-muted", "small", 3, "click"], ["href", "#", 1, "text-danger", "small", 3, "click"], ["class", "text-center p-4 text-muted", 4, "ngIf"], [1, "list-group", "list-group-flush"], ["class", "list-group-item d-flex justify-content-between align-items-center", 3, "task-important", "task-completed", 4, "ngFor", "ngForOf"], [1, "text-center", "p-4", "text-muted"], [1, "list-group-item", "d-flex", "justify-content-between", "align-items-center"], [1, "task-checkbox"], ["type", "checkbox", 3, "checked", "click"], [1, "title"], [1, "task-category", "text-right", "text-muted", "small"], [1, "task-star", "text-right", 3, "click"], ["class", "material-icons", 4, "ngIf"], [1, "material-icons"]],
+      consts: [[1, "mt-2", "mb-2", "form-row"], [1, "col-6"], ["type", "text", "id", "text", "placeholder", "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0437\u0430\u0434\u0430\u043D\u0438\u0435", 1, "form-control", 3, "input"], ["newItemText", ""], [1, "col-4"], ["id", "selectCategory", 1, "form-control", 3, "input"], ["newItemCategory", ""], ["selected", "", "disabled", ""], [1, "col"], [1, "btn", "btn-success", "w-100", 3, "click"], [1, "d-flex", "justify-content-between"], ["href", "#", 1, "text-muted", "small", 3, "click"], ["href", "#", 1, "text-danger", "small", 3, "click"], ["class", "text-center p-4 text-muted", 4, "ngIf"], [1, "list-group", "list-group-flush"], ["class", "list-group-item d-flex justify-content-between align-items-center", 3, "task-important", "task-completed", 4, "ngFor", "ngForOf"], [1, "text-center", "p-4", "text-muted"], [1, "list-group-item", "d-flex", "justify-content-between", "align-items-center"], [1, "task-checkbox"], ["type", "checkbox", 3, "checked", "click"], [1, "title"], [1, "task-category", "text-right", "text-muted", "small"], [1, "task-star", "text-right", 3, "click"], ["class", "material-icons", 4, "ngIf"], [1, "material-icons"]],
       template: function TodosComponent_Template(rf, ctx) {
         if (rf & 1) {
           var _r10 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
@@ -895,13 +938,31 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "input", 2, 3);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "input", 2, 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function TodosComponent_Template_input_input_2_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
+
+            var _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](3);
+
+            return ctx.inputCheck(_r0.value);
+          });
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4);
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "select", 5, 6);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("input", function TodosComponent_Template_select_input_5_listener() {
+            _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r10);
+
+            var _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵreference"](6);
+
+            return ctx.categoryCheck(_r1.value);
+          });
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "option", 7);
 

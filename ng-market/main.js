@@ -245,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [
     {
-        path: '',
+        path: 'first',
         component: _ng_cnt_market_first_page_ng_cnt_market_first_page_component__WEBPACK_IMPORTED_MODULE_2__["NgCntMarketFirstPageComponent"],
     },
     {
@@ -282,7 +282,7 @@ const routes = [
     },
     {
         path: '**',
-        component: _ng_cnt_market_first_page_ng_cnt_market_first_page_component__WEBPACK_IMPORTED_MODULE_2__["NgCntMarketFirstPageComponent"],
+        component: _ng_cnt_market_second_page_ng_cnt_market_second_page_component__WEBPACK_IMPORTED_MODULE_3__["NgCntMarketSecondPageComponent"],
     },
 ];
 class AppRoutingModule {
